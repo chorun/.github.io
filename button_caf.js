@@ -1,0 +1,23 @@
+const caffeine = {
+    name: ['monstar', 'red', 'pill', 'coffee'],
+    capacity: [142, 80, 200, 90]
+}
+
+function sum_caf() {
+    var total = 0;
+    var lim = 3000;
+    for (i = 0; i < caffeine.capacity.length; i++) {
+        var num = document.getElementById(caffeine.name[i]).value;
+        total = total + caffeine.capacity[i] * num;
+    };
+    document.getElementById("total_caf").innerHTML = total + "mg";
+    if ((lim - total) > 0) {
+        document.getElementById("limit=_caf").innerHTML = "残" + (lim - total) + "mg";
+    } else {
+        document.getElementById("limit=_caf").innerHTML = "あなたは死にました。"
+    }
+}
+
+function clearBtn(id) {
+    document.getElementById(id).value = 0;
+}
