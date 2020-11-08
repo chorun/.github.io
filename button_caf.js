@@ -1,6 +1,6 @@
 const caffeine = {
-    name: ['monstar', 'red', 'pill', 'coffee'],
-    capacity: [142, 80, 200, 90]
+    name: ['monstar', 'red', 'medicine', 'coffee', 'coke'],
+    capacity: [142, 80, 200, 90, 50]
 }
 
 function sum_caf() {
@@ -12,7 +12,7 @@ function sum_caf() {
     };
     document.getElementById("total_caf").innerHTML = total + "mg";
     if ((lim - total) > 0) {
-        document.getElementById("limit=_caf").innerHTML = "残" + (lim - total) + "mg";
+        document.getElementById("limit=_caf").innerHTML = "残り" + (lim - total) + "mg";
     } else {
         document.getElementById("limit=_caf").innerHTML = "あなたは死にました。"
     }
