@@ -98,6 +98,7 @@ header .site-sub-title {
 @media screen and (max-width: 768px) {
     .list_caf {
         width: 80%;
+        margin: 20px auto;
         flex-direction: column;
     }
 }
@@ -137,6 +138,12 @@ header .site-sub-title {
     background-color: #e6e6e6;
 }
 
+@media screen and (max-width: 768px) {
+    .result_text {
+        margin: 20px auto;
+    }
+}
+
 .result_text h2 {
     color: #ff9100;
 }
@@ -163,6 +170,13 @@ header .site-sub-title {
     color: #ffffff;
     box-shadow: 9px 9px 5px #666666;
     border: 2px solid #000000;
+}
+
+@media screen and (max-width: 768px) {
+    .BTN_total {
+        margin: 5px auto 5px auto;
+        font-size: 20pt;
+    }
 }
 
 .BTN_total:active {
