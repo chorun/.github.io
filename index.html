@@ -11,7 +11,9 @@
     <meta property="og:description" content="">
     <meta name="description" content="カフェインの摂取量を計算します。">
     <link rel="stylesheet" href="caffeine.css">
-    <script src="button_caf.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="button_caf.js"></script>
+    <script type="text/javascript" src="counter.js"></script>
 </head>
 
 <body>
@@ -26,48 +28,53 @@
         <div class="list_caf">
             <div class="kind_caf">
                 <img src="img/drink_energy_can.png" class="img_caf">
-                <p>モンスターエナジー</p>
-                <form>
-                    <input class="num_caf" id="monstar" type="number" value="0" min="0" max="99">
-                    <span>本</span>
+                <p>モンスターエナジー(本)</p>
+                <div class="spinner_area">
+                    <input id="monstar" type="number" value="0" class="counter1" data-max="500" data-min="0">
+                    <input type="button" value="＋" class="btnspinner" data-cal="1" data-target=".counter1">
+                    <input type="button" value="－" class="btnspinner" data-cal="-1" data-target=".counter1">
                     <input class="BTN_clear" type="button" value="clear" onclick="clearBtn('monstar')">
-                </form>
+                </div>
             </div>
             <div class="kind_caf">
                 <img src="img/drink_energy.png" class="img_caf">
-                <p>レッドブル</p>
-                <form>
-                    <input class="num_caf" id="red" type="number" value="0" min="0" max="99">
-                    <span>本</span>
+                <p>レッドブル(本)</p>
+                <div class="spinner_area">
+                    <input id="red" type="number" value="0" class="counter2" data-max="500" data-min="0">
+                    <input type="button" value="＋" class="btnspinner" data-cal="1" data-target=".counter2">
+                    <input type="button" value="－" class="btnspinner" data-cal="-1" data-target=".counter2">
                     <input class="BTN_clear" type="button" value="clear" onclick="clearBtn('red')">
-                </form>
+                </div>
             </div>
             <div class="kind_caf">
                 <img src="img/medicine_fukuro.png" class="img_caf">
-                <p>錠剤</p>
-                <form>
-                    <input class="num_caf" id="medicine" type="number" value="0.0" min="0.0" max="99.0" step="0.5">
-                    <span>錠</span>
+                <p>錠剤(錠)</p>
+                <div class="spinner_area">
+                    <input id="medicine" type="number" value="0" class="counter3" data-max="500" data-min="0">
+                    <input type="button" value="＋" class="btnspinner" data-cal="1" data-target=".counter3">
+                    <input type="button" value="－" class="btnspinner" data-cal="-1" data-target=".counter3">
                     <input class="BTN_clear" type="button" value="clear" onclick="clearBtn('medicine')">
-                </form>
+                </div>
             </div>
             <div class="kind_caf">
                 <img src="img/can_coffee.png" class="img_caf">
-                <p>コーヒー</p>
-                <form>
-                    <input class="num_caf" id="coffee" type="number" value="0" min="0" max="99">
-                    <span>杯</span>
+                <p>コーヒー(杯)</p>
+                <div class="spinner_area">
+                    <input id="coffee" type="number" value="0" class="counter4" data-max="500" data-min="0">
+                    <input type="button" value="＋" class="btnspinner" data-cal="1" data-target=".counter4">
+                    <input type="button" value="－" class="btnspinner" data-cal="-1" data-target=".counter4">
                     <input class="BTN_clear" type="button" value="clear" onclick="clearBtn('coffee')">
-                </form>
+                </div>
             </div>
             <div class="kind_caf">
                 <img src="img/drink_cola_petbottle.png" class="img_caf">
-                <p>コーラ</p>
-                <form>
-                    <input class="num_caf" id="coke" type="number" value="0" min="0" max="99">
-                    <span>本</span>
+                <p>コーラ(本)</p>
+                <div class="spinner_area">
+                    <input id="coke" type="number" value="0" class="counter5" data-max="500" data-min="0">
+                    <input type="button" value="＋" class="btnspinner" data-cal="1" data-target=".counter5">
+                    <input type="button" value="－" class="btnspinner" data-cal="-1" data-target=".counter5">
                     <input class="BTN_clear" type="button" value="clear" onclick="clearBtn('coke')">
-                </form>
+                </div>
             </div>
         </div>
 
