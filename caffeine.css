@@ -153,11 +153,6 @@ header .site-sub-title {
     height: 200px;
 }
 
-.num_caf {
-    font-size: 12pt;
-    border: 2px solid #000000;
-}
-
 .BTN_total {
     margin: 10px 50px 5px 40px;
     display: inline-block;
@@ -182,6 +177,30 @@ header .site-sub-title {
 .BTN_total:active {
     box-shadow: none;
     background: #006d64;
+}
+
+.btnspinner {
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.spinner_area input {
+    padding: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    font-size: 16px;
+    width: auto;
+    vertical-align: middle;
+    /* デフォルトのスピナーを消す */
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+}
+
+.spinner_area input[type="button"] {
+    cursor: pointer;
 }
 
 .BTN_clear {
